@@ -22,3 +22,22 @@ insert into tasks (
 );
 
 select * from tasks;
+
+*************
+#Database configuration
+HOST_DB=''
+PORT_DB=
+DATABASE_DB='d'
+USER_DB=''
+PASSWORD_DB=''
+*************
+yarn  init -yarn
+
+yarn add nodemon -D
+
+yarn add express
+
+yarn add pg
+
+yar add dotenv
+
