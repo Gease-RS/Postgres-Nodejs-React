@@ -44,6 +44,18 @@ const remove = (id) => {
     ])
 }
 
+const update = async ({id, title, description, status, created_at}) => {
+    const response = await Database.query(`
+        update tasks
+        set title=$1, description=$2, status=$3, created_at=$4, updated_at=current_timestamp
+        where id = $5 returning *
+    `, [
+        title, description, status, created_at, id
+    ])
+
+    return response.rows[0]
+}
+
 module.exports = {
-    findAll, save, findById, remove
+    findAll, save, findById, remove, update
 }
