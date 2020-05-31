@@ -41,3 +41,12 @@ yarn add pg
 
 yar add dotenv
 
+yarn create react-app react-jwt-task
+
+yarn add bootswatch
+
+yarn add react-router-dom
+
+yarn add axios
+
+yarn add cors
