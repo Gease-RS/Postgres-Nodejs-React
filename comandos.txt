@@ -51,5 +51,7 @@ yarn add axios
 
 yarn add cors
 
-front
+FRONT
 yarn add moment
+
+yarn add react-icons
